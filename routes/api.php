@@ -14,14 +14,16 @@ Route::get('materias',[App\Http\Controllers\MateriasController::class,'getMateri
 
 Route::get('getAllMateriasEstudiantes',[App\Http\Controllers\EstudianteController::class,'getAllMateriasEstudiantes']);
 Route::get('getEstudiantesByIdMateria',[App\Http\Controllers\EstudianteController::class,'getEstudiantesByIdMateria']);
-
-
+Route::get('getEstudiantes',[App\Http\Controllers\EstudianteController::class,'getEstudiantes']);
+Route::post('createEstudiante',[App\Http\Controllers\EstudianteController::class,'createEstudiante']);
+Route::post('validarExistenciaEstudiante',[App\Http\Controllers\EstudianteController::class,'validarExistenciaEstudiante']);
+Route::post('matricularEstudiante',[App\Http\Controllers\EstudianteMateriaController::class,'matricularEstudiante']);
 
 Route::post('saveRecordNewProfesor',[App\Http\Controllers\ProfesorController::class,'saveRecordNewProfesor']);
 
 // almacenar Asistencia
 
-Route::get('registrarAsistencia',[App\Http\Controllers\AsistenciaController::class,'setAsistenciaEstudiante']);
+Route::get('regisgit trarAsistencia',[App\Http\Controllers\AsistenciaController::class,'setAsistenciaEstudiante']);
 
 Route::get('getAsistenciasEntregasByDate',[App\Http\Controllers\AsistenciaController::class,'getHistorialAsistenciasByDate']);
 Route::get('getAsistencia',[App\Http\Controllers\AsistenciaController::class,'getAllAsistencia']);
