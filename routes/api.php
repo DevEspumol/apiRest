@@ -23,7 +23,7 @@ Route::post('saveRecordNewProfesor',[App\Http\Controllers\ProfesorController::cl
 
 // almacenar Asistencia
 
-Route::get('regisgit trarAsistencia',[App\Http\Controllers\AsistenciaController::class,'setAsistenciaEstudiante']);
+Route::get('registrarAsistencia',[App\Http\Controllers\AsistenciaController::class,'setAsistenciaEstudiante']);
 
 Route::get('getAsistenciasEntregasByDate',[App\Http\Controllers\AsistenciaController::class,'getHistorialAsistenciasByDate']);
 Route::get('getAsistencia',[App\Http\Controllers\AsistenciaController::class,'getAllAsistencia']);
